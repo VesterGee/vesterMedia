@@ -710,6 +710,7 @@ http://www.tooplate.com/view/2078-adventure
 
 			<!-- Contact form section
 			================================================== -->
+			<!--
 			<div class="col-md-offset-1 col-md-10 col-sm-12">
 				<form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
 					<div class="col-md-4 col-sm-6">
@@ -729,26 +730,10 @@ http://www.tooplate.com/view/2078-adventure
 					</div>
 				</form>
 			</div>
-
-			<form action="mail.php" method="POST">
-			<p>Name</p> <input type="text" name="name">
-			<p>Email</p> <input type="text" name="email">
-			<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-			<input type="submit" value="Send"><input type="reset" value="Clear">
-			</form>
+-->
 
 
-
-			<?php $name = $_POST['name'];
-			$email = $_POST['email'];
-			$message = $_POST['message'];
-			$formcontent="From: $name \n Message: $message";
-			$recipient = "emailaddress@here.com";
-			$subject = "Contact Form";
-			$mailheader = "From: $email \r\n";
-			mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-			echo "Thank You!";
-			?>
+			
 
 			<!-- Contact detail section
 			================================================== -->
@@ -758,8 +743,8 @@ http://www.tooplate.com/view/2078-adventure
 					<p>vester.diegoguerrero@gmail.com</p>
 				</div>
 				<div class="col-md-6 col-sm-6">
-					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
-					<p>(830) 900-6881 | (830) 322-4149</p>
+					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONE</h3>
+					<p>(830) 900-6881 </p>
 				</div>
 			</div>
 
